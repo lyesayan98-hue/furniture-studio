@@ -1,24 +1,2036 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8">
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
 
-    <meta
-      name="description"
-      content="Atelier — Premium interior architecture and spatial design studio."
-    />
+>
 
-    <title>Atelier — Interior Architecture Studio</title>
-  </head>
+<meta
+name="description"
+content="Atelier — Premium interior architecture and spatial design studio."
 
-  <body>
-    <div id="root"></div>
+>
 
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <title>Atelier — Interior Architecture Studio</title>
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Lucide Icons -->
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Our CSS -->
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       NAVIGATION
+  ====================================================== -->
+
+  <header class="site-header">
+
+```
+<div class="container nav-container">
+
+  <a href="#" class="logo">
+    ATELIER<span>.</span>
+  </a>
+
+  <nav class="desktop-nav">
+
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#process">Process</a>
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+  <a href="#contact" class="nav-cta">
+    Start a project
+    <i data-lucide="arrow-up-right"></i>
+  </a>
+
+  <button
+    class="mobile-menu-button"
+    id="mobileMenuButton"
+    aria-label="Open menu"
+  >
+    <i data-lucide="menu"></i>
+  </button>
+
+</div>
+
+<!-- Mobile Navigation -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mobile-menu-inner">
+
+    <button
+      class="mobile-menu-close"
+      id="mobileMenuClose"
+      aria-label="Close menu"
+    >
+      <i data-lucide="x"></i>
+    </button>
+
+    <nav>
+
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </div>
+
+</div>
+```
+
+  </header>
+
+  <!-- =====================================================
+       01 — HERO
+  ====================================================== -->
+
+  <section class="hero" id="home">
+
+```
+<div class="hero-image">
+
+  <img
+    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=90"
+    alt="Luxury modern interior"
+  >
+
+</div>
+
+<div class="hero-overlay"></div>
+
+<div class="hero-gradient"></div>
+
+<div class="container hero-container">
+
+  <div class="hero-content">
+
+    <p class="eyebrow hero-eyebrow">
+      Interior Architecture · Spatial Design
+    </p>
+
+    <h1 class="hero-title">
+      Spaces with
+      <br>
+      <em>lasting presence.</em>
+    </h1>
+
+    <p class="hero-description">
+      We create thoughtful interiors and architectural
+      spaces shaped around the way people live.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="#projects" class="button button-light">
+        Explore Projects
+        <i data-lucide="arrow-right"></i>
+      </a>
+
+      <a href="#contact" class="text-link light-link">
+        Start a conversation
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- Hero Metrics -->
+
+  <div class="hero-metrics">
+
+    <div class="metric">
+
+      <span class="metric-number">
+        150+
+      </span>
+
+      <span class="metric-label">
+        Projects completed
+      </span>
+
+    </div>
+
+    <div class="metric">
+
+      <span class="metric-number">
+        12
+      </span>
+
+      <span class="metric-label">
+        Years experience
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<a href="#about" class="scroll-indicator">
+
+  <span>Scroll</span>
+
+  <i data-lucide="arrow-down"></i>
+
+</a>
+```
+
+  </section>
+
+  <!-- =====================================================
+       02 — ABOUT STUDIO
+  ====================================================== -->
+
+  <section class="about section" id="about">
+
+```
+<div class="container">
+
+  <div class="about-grid">
+
+    <!-- Left -->
+
+    <div class="about-heading reveal">
+
+      <p class="eyebrow">
+        01 — About Studio
+      </p>
+
+      <h2 class="section-title">
+        Design that
+        <br>
+        feels <em>inevitable.</em>
+      </h2>
+
+    </div>
+
+
+    <!-- Right -->
+
+    <div class="about-content reveal">
+
+      <p class="large-text">
+        We create architecture and interiors that are
+        calm, tactile and deeply connected to the way
+        people live.
+      </p>
+
+      <p class="body-text">
+        Our studio combines architectural thinking with
+        a refined understanding of materials, proportion
+        and atmosphere. We believe the most memorable
+        spaces are not defined by trends, but by a sense
+        of clarity and permanence.
+      </p>
+
+      <div class="stats-grid">
+
+        <div class="stat">
+
+          <span class="stat-number">
+            150+
+          </span>
+
+          <span class="stat-label">
+            Projects
+          </span>
+
+        </div>
+
+        <div class="stat">
+
+          <span class="stat-number">
+            12
+          </span>
+
+          <span class="stat-label">
+            Years
+          </span>
+
+        </div>
+
+        <div class="stat">
+
+          <span class="stat-number">
+            18
+          </span>
+
+          <span class="stat-label">
+            Awards
+          </span>
+
+        </div>
+
+        <div class="stat">
+
+          <span class="stat-number">
+            09
+          </span>
+
+          <span class="stat-label">
+            Countries
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- About Image -->
+
+  <div class="about-image reveal">
+
+    <img
+      src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=2200&q=90"
+      alt="Minimal luxury interior"
+      loading="lazy"
+    >
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       03 — BENEFITS / APPROACH
+  ====================================================== -->
+
+  <section class="benefits section section-stone">
+
+```
+<div class="container">
+
+  <div class="section-intro reveal">
+
+    <div>
+
+      <p class="eyebrow">
+        02 — Our Approach
+      </p>
+
+      <h2 class="section-title">
+        Why our work
+        <br>
+        <em>feels different.</em>
+      </h2>
+
+    </div>
+
+    <p class="intro-description">
+      A thoughtful design process creates spaces that
+      look beautiful today and continue to make sense
+      years from now.
+    </p>
+
+  </div>
+
+
+  <div class="benefits-grid">
+
+    <!-- Benefit 1 -->
+
+    <article class="benefit-card reveal">
+
+      <div class="card-top">
+
+        <span class="card-number">
+          01
+        </span>
+
+        <span class="card-symbol">
+          +
+        </span>
+
+      </div>
+
+      <div class="card-content">
+
+        <h3>
+          Human-centered
+        </h3>
+
+        <p>
+          Every decision begins with how a space should
+          feel and function for the people using it.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Benefit 2 -->
+
+    <article class="benefit-card reveal">
+
+      <div class="card-top">
+
+        <span class="card-number">
+          02
+        </span>
+
+        <span class="card-symbol">
+          +
+        </span>
+
+      </div>
+
+      <div class="card-content">
+
+        <h3>
+          Material-led
+        </h3>
+
+        <p>
+          We work with natural materials, honest textures
+          and carefully considered finishes.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Benefit 3 -->
+
+    <article class="benefit-card reveal">
+
+      <div class="card-top">
+
+        <span class="card-number">
+          03
+        </span>
+
+        <span class="card-symbol">
+          +
+        </span>
+
+      </div>
+
+      <div class="card-content">
+
+        <h3>
+          Timeless
+        </h3>
+
+        <p>
+          Our work is designed to mature beautifully rather
+          than follow short-lived visual trends.
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Benefit 4 -->
+
+    <article class="benefit-card reveal">
+
+      <div class="card-top">
+
+        <span class="card-number">
+          04
+        </span>
+
+        <span class="card-symbol">
+          +
+        </span>
+
+      </div>
+
+      <div class="card-content">
+
+        <h3>
+          End-to-end
+        </h3>
+
+        <p>
+          From first concept to final styling, we manage
+          the entire creative journey.
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       04 — SERVICES ACCORDION
+  ====================================================== -->
+
+  <section class="services section" id="services">
+
+```
+<div class="container">
+
+  <div class="services-grid">
+
+    <!-- Services Intro -->
+
+    <div class="services-intro reveal">
+
+      <p class="eyebrow">
+        03 — Services
+      </p>
+
+      <h2 class="section-title">
+        From first
+        <br>
+        <em>idea</em> to final detail.
+      </h2>
+
+      <p class="body-text">
+        A complete design service built around clarity,
+        collaboration and exceptional execution.
+      </p>
+
+      <a
+        href="#contact"
+        class="text-link dark-link"
+      >
+        Discuss your project
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+
+    </div>
+
+
+    <!-- Accordion -->
+
+    <div class="services-list reveal">
+
+
+      <!-- Service 1 -->
+
+      <div class="service-item">
+
+        <button
+          class="service-header"
+          data-service="0"
+          aria-expanded="true"
+        >
+
+          <div class="service-title-wrapper">
+
+            <span class="service-number">
+              01
+            </span>
+
+            <h3>
+              Interior Design
+            </h3>
+
+          </div>
+
+          <span class="service-icon">
+            <i data-lucide="minus"></i>
+          </span>
+
+        </button>
+
+        <div class="service-content active">
+
+          <p>
+            We create thoughtful interiors that balance
+            atmosphere, functionality and timeless
+            character.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Service 2 -->
+
+      <div class="service-item">
+
+        <button
+          class="service-header"
+          data-service="1"
+          aria-expanded="false"
+        >
+
+          <div class="service-title-wrapper">
+
+            <span class="service-number">
+              02
+            </span>
+
+            <h3>
+              Architecture
+            </h3>
+
+          </div>
+
+          <span class="service-icon">
+            <i data-lucide="plus"></i>
+          </span>
+
+        </button>
+
+        <div class="service-content">
+
+          <p>
+            From spatial concepts to architectural
+            detailing, we shape environments around the
+            people who inhabit them.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Service 3 -->
+
+      <div class="service-item">
+
+        <button
+          class="service-header"
+          data-service="2"
+          aria-expanded="false"
+        >
+
+          <div class="service-title-wrapper">
+
+            <span class="service-number">
+              03
+            </span>
+
+            <h3>
+              Spatial Planning
+            </h3>
+
+          </div>
+
+          <span class="service-icon">
+            <i data-lucide="plus"></i>
+          </span>
+
+        </button>
+
+        <div class="service-content">
+
+          <p>
+            We carefully organize every square meter to
+            create intuitive movement, natural flow and
+            purposeful spaces.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Service 4 -->
+
+      <div class="service-item">
+
+        <button
+          class="service-header"
+          data-service="3"
+          aria-expanded="false"
+        >
+
+          <div class="service-title-wrapper">
+
+            <span class="service-number">
+              04
+            </span>
+
+            <h3>
+              Furniture & Styling
+            </h3>
+
+          </div>
+
+          <span class="service-icon">
+            <i data-lucide="plus"></i>
+          </span>
+
+        </button>
+
+        <div class="service-content">
+
+          <p>
+            We curate furniture, materials, lighting and
+            objects that complete the visual language of
+            each project.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       05 — LIFESTYLE GALLERY
+  ====================================================== -->
+
+  <section class="gallery section">
+
+```
+<div class="container">
+
+  <div class="gallery-heading reveal">
+
+    <div>
+
+      <p class="eyebrow">
+        Visual Language
+      </p>
+
+      <h2 class="section-title">
+        Spaces to <em>live in.</em>
+      </h2>
+
+    </div>
+
+    <span class="gallery-label">
+      Selected atmosphere
+    </span>
+
+  </div>
+
+
+  <div class="gallery-grid">
+
+    <div class="gallery-image gallery-large reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90"
+        alt="Luxury living room"
+        loading="lazy"
+      >
+
+    </div>
+
+
+    <div class="gallery-image gallery-small reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=90"
+        alt="Minimal interior"
+        loading="lazy"
+      >
+
+    </div>
+
+
+    <div class="gallery-image gallery-medium reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&q=90"
+        alt="Modern interior details"
+        loading="lazy"
+      >
+
+    </div>
+
+
+    <div class="gallery-image gallery-large reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=90"
+        alt="Contemporary interior"
+        loading="lazy"
+      >
+
+    </div>
+
+
+    <div class="gallery-image gallery-full reveal">
+
+      <img
+        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2000&q=90"
+        alt="Luxury home architecture"
+        loading="lazy"
+      >
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       06 — RECENT PROJECTS
+  ====================================================== -->
+
+  <section
+    class="projects section-dark section"
+    id="projects"
+  >
+
+```
+<div class="container">
+
+  <div class="projects-heading reveal">
+
+    <div>
+
+      <p class="eyebrow eyebrow-light">
+        04 — Selected Work
+      </p>
+
+      <h2 class="section-title title-light">
+        Recent
+        <br>
+        <em>projects.</em>
+      </h2>
+
+    </div>
+
+    <a
+      href="#contact"
+      class="text-link light-link"
+    >
+      View all projects
+      <i data-lucide="arrow-right"></i>
+    </a>
+
+  </div>
+
+
+  <div class="projects-grid">
+
+
+    <!-- Project 1 -->
+
+    <article class="project-card project-featured reveal">
+
+      <div class="project-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2000&q=90"
+          alt="Casa No. 17"
+          loading="lazy"
+        >
+
+        <div class="project-overlay">
+
+          <div class="project-overlay-content">
+
+            <div>
+
+              <span>
+                Residential
+              </span>
+
+              <h3>
+                Casa No. 17
+              </h3>
+
+              <p>
+                Los Angeles, CA
+              </p>
+
+            </div>
+
+            <span class="project-arrow">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-mobile-info">
+
+        <h3>
+          Casa No. 17
+        </h3>
+
+        <p>
+          Residential · Los Angeles, CA
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Project 2 -->
+
+    <article class="project-card reveal">
+
+      <div class="project-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=90"
+          alt="The Limestone House"
+          loading="lazy"
+        >
+
+        <div class="project-overlay">
+
+          <div class="project-overlay-content">
+
+            <div>
+
+              <span>
+                Architecture
+              </span>
+
+              <h3>
+                The Limestone House
+              </h3>
+
+              <p>
+                Austin, TX
+              </p>
+
+            </div>
+
+            <span class="project-arrow">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-mobile-info">
+
+        <h3>
+          The Limestone House
+        </h3>
+
+        <p>
+          Architecture · Austin, TX
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Project 3 -->
+
+    <article class="project-card reveal">
+
+      <div class="project-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1800&q=90"
+          alt="Quiet Geometry"
+          loading="lazy"
+        >
+
+        <div class="project-overlay">
+
+          <div class="project-overlay-content">
+
+            <div>
+
+              <span>
+                Interior
+              </span>
+
+              <h3>
+                Quiet Geometry
+              </h3>
+
+              <p>
+                New York, NY
+              </p>
+
+            </div>
+
+            <span class="project-arrow">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-mobile-info">
+
+        <h3>
+          Quiet Geometry
+        </h3>
+
+        <p>
+          Interior · New York, NY
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Project 4 -->
+
+    <article class="project-card reveal">
+
+      <div class="project-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1800&q=90"
+          alt="Oak and Stone"
+          loading="lazy"
+        >
+
+        <div class="project-overlay">
+
+          <div class="project-overlay-content">
+
+            <div>
+
+              <span>
+                Residential
+              </span>
+
+              <h3>
+                Oak & Stone
+              </h3>
+
+              <p>
+                Denver, CO
+              </p>
+
+            </div>
+
+            <span class="project-arrow">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-mobile-info">
+
+        <h3>
+          Oak & Stone
+        </h3>
+
+        <p>
+          Residential · Denver, CO
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Project 5 -->
+
+    <article class="project-card reveal">
+
+      <div class="project-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1800&q=90"
+          alt="Monument House"
+          loading="lazy"
+        >
+
+        <div class="project-overlay">
+
+          <div class="project-overlay-content">
+
+            <div>
+
+              <span>
+                Architecture
+              </span>
+
+              <h3>
+                Monument House
+              </h3>
+
+              <p>
+                Palm Springs, CA
+              </p>
+
+            </div>
+
+            <span class="project-arrow">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-mobile-info">
+
+        <h3>
+          Monument House
+        </h3>
+
+        <p>
+          Architecture · Palm Springs, CA
+        </p>
+
+      </div>
+
+    </article>
+
+
+    <!-- Project 6 -->
+
+    <article class="project-card reveal">
+
+      <div class="project-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=90"
+          alt="Soft Brutalism"
+          loading="lazy"
+        >
+
+        <div class="project-overlay">
+
+          <div class="project-overlay-content">
+
+            <div>
+
+              <span>
+                Interior
+              </span>
+
+              <h3>
+                Soft Brutalism
+              </h3>
+
+              <p>
+                Miami, FL
+              </p>
+
+            </div>
+
+            <span class="project-arrow">
+              <i data-lucide="arrow-up-right"></i>
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="project-mobile-info">
+
+        <h3>
+          Soft Brutalism
+        </h3>
+
+        <p>
+          Interior · Miami, FL
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       07 — WORKING PROCESS
+  ====================================================== -->
+
+  <section class="process section" id="process">
+
+```
+<div class="container">
+
+  <div class="process-grid">
+
+    <div class="process-intro reveal">
+
+      <p class="eyebrow">
+        05 — Working Process
+      </p>
+
+      <h2 class="section-title">
+        A clear path
+        <br>
+        from <em>idea</em>
+        <br>
+        to reality.
+      </h2>
+
+    </div>
+
+
+    <div class="process-list">
+
+
+      <!-- Step 1 -->
+
+      <div class="process-step reveal">
+
+        <span class="process-number">
+          01
+        </span>
+
+        <div>
+
+          <h3>
+            Discovery
+          </h3>
+
+          <p>
+            We listen, ask questions and understand the
+            people, place and ambition behind your project.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Step 2 -->
+
+      <div class="process-step reveal">
+
+        <span class="process-number">
+          02
+        </span>
+
+        <div>
+
+          <h3>
+            Concept Design
+          </h3>
+
+          <p>
+            We translate your vision into spatial concepts,
+            materials, mood and architectural direction.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Step 3 -->
+
+      <div class="process-step reveal">
+
+        <span class="process-number">
+          03
+        </span>
+
+        <div>
+
+          <h3>
+            Development
+          </h3>
+
+          <p>
+            Ideas become detailed drawings, specifications,
+            selections and a clear execution strategy.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Step 4 -->
+
+      <div class="process-step reveal">
+
+        <span class="process-number">
+          04
+        </span>
+
+        <div>
+
+          <h3>
+            Delivery
+          </h3>
+
+          <p>
+            We coordinate the final details and ensure the
+            finished space reflects the original vision.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       08 — TESTIMONIALS
+  ====================================================== -->
+
+  <section class="testimonials section section-stone">
+
+```
+<div class="container">
+
+  <div class="testimonials-heading reveal">
+
+    <div>
+
+      <p class="eyebrow">
+        06 — Customer Observation
+      </p>
+
+      <h2 class="section-title">
+        Words from
+        <br>
+        <em>our clients.</em>
+      </h2>
+
+    </div>
+
+
+    <div class="testimonial-controls">
+
+      <button
+        id="testimonialPrev"
+        aria-label="Previous testimonial"
+      >
+        <i data-lucide="arrow-left"></i>
+      </button>
+
+      <button
+        id="testimonialNext"
+        aria-label="Next testimonial"
+      >
+        <i data-lucide="arrow-right"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- Testimonial Slider -->
+
+  <div class="testimonial-slider">
+
+    <div
+      class="testimonial-track"
+      id="testimonialTrack"
+    >
+
+
+      <!-- Testimonial 1 -->
+
+      <article class="testimonial">
+
+        <div class="testimonial-person">
+
+          <img
+            src="https://i.pravatar.cc/150?img=47"
+            alt="Dianne Russell"
+          >
+
+          <p class="testimonial-location">
+            New York
+          </p>
+
+          <p class="testimonial-name">
+            Dianne Russell
+          </p>
+
+          <p class="testimonial-role">
+            Private Residence
+          </p>
+
+        </div>
+
+
+        <div class="testimonial-content">
+
+          <div class="stars">
+
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+
+          </div>
+
+          <blockquote>
+            “They understood the atmosphere we wanted
+            before we even knew how to describe it.
+            Every detail feels intentional, calm and
+            completely personal.”
+          </blockquote>
+
+        </div>
+
+      </article>
+
+
+      <!-- Testimonial 2 -->
+
+      <article class="testimonial">
+
+        <div class="testimonial-person">
+
+          <img
+            src="https://i.pravatar.cc/150?img=32"
+            alt="Kathryn Murphy"
+          >
+
+          <p class="testimonial-location">
+            Los Angeles
+          </p>
+
+          <p class="testimonial-name">
+            Kathryn Murphy
+          </p>
+
+          <p class="testimonial-role">
+            Homeowner
+          </p>
+
+        </div>
+
+
+        <div class="testimonial-content">
+
+          <div class="stars">
+
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+
+          </div>
+
+          <blockquote>
+            “The entire experience felt incredibly
+            considered. They transformed an ordinary
+            space into something that feels timeless
+            and deeply connected to how we live.”
+          </blockquote>
+
+        </div>
+
+      </article>
+
+
+      <!-- Testimonial 3 -->
+
+      <article class="testimonial">
+
+        <div class="testimonial-person">
+
+          <img
+            src="https://i.pravatar.cc/150?img=44"
+            alt="Annette Black"
+          >
+
+          <p class="testimonial-location">
+            Austin
+          </p>
+
+          <p class="testimonial-name">
+            Annette Black
+          </p>
+
+          <p class="testimonial-role">
+            Property Owner
+          </p>
+
+        </div>
+
+
+        <div class="testimonial-content">
+
+          <div class="stars">
+
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+            <i data-lucide="star"></i>
+
+          </div>
+
+          <blockquote>
+            “The result exceeded every expectation.
+            Beautiful materials, incredible proportions
+            and a process that was professional from
+            beginning to end.”
+          </blockquote>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+
+  <div class="testimonial-dots" id="testimonialDots">
+
+    <button class="active" data-slide="0"></button>
+    <button data-slide="1"></button>
+    <button data-slide="2"></button>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       09 — PARTNERS
+  ====================================================== -->
+
+  <section class="partners section-small">
+
+```
+<div class="container">
+
+  <p class="eyebrow">
+    07 — We Have Partnered With
+  </p>
+
+</div>
+
+
+<div class="logo-marquee">
+
+  <div class="logo-track">
+
+    <div class="partner-logo">
+      ARCHFORM
+    </div>
+
+    <div class="partner-logo">
+      NORDEN
+    </div>
+
+    <div class="partner-logo">
+      FORME
+    </div>
+
+    <div class="partner-logo">
+      MATERIAL
+    </div>
+
+    <div class="partner-logo">
+      STUDIO 08
+    </div>
+
+    <div class="partner-logo">
+      MONUMENT
+    </div>
+
+    <div class="partner-logo">
+      LIV
+    </div>
+
+    <div class="partner-logo">
+      ATELIER
+    </div>
+
+
+    <!-- Duplicate for infinite loop -->
+
+    <div class="partner-logo">
+      ARCHFORM
+    </div>
+
+    <div class="partner-logo">
+      NORDEN
+    </div>
+
+    <div class="partner-logo">
+      FORME
+    </div>
+
+    <div class="partner-logo">
+      MATERIAL
+    </div>
+
+    <div class="partner-logo">
+      STUDIO 08
+    </div>
+
+    <div class="partner-logo">
+      MONUMENT
+    </div>
+
+    <div class="partner-logo">
+      LIV
+    </div>
+
+    <div class="partner-logo">
+      ATELIER
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       10 — WHY CHOOSE US
+  ====================================================== -->
+
+  <section class="why-us section section-dark">
+
+```
+<div class="container">
+
+  <div class="why-grid">
+
+    <div class="why-intro reveal">
+
+      <p class="eyebrow eyebrow-light">
+        08 — Why Choose Us
+      </p>
+
+      <h2 class="section-title title-light">
+        Designed
+        <br>
+        with <em>purpose.</em>
+      </h2>
+
+      <p class="body-text body-light">
+        We believe good design should not simply look
+        beautiful. It should improve the way you
+        experience a space.
+      </p>
+
+    </div>
+
+
+    <div class="why-list">
+
+
+      <!-- Why 1 -->
+
+      <div class="why-item reveal">
+
+        <span class="why-number">
+          01
+        </span>
+
+        <div>
+
+          <h3>
+            Custom Tailored Design
+          </h3>
+
+          <p>
+            No formulas. Every project begins with a blank
+            page and is shaped around your space and
+            lifestyle.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Why 2 -->
+
+      <div class="why-item reveal">
+
+        <span class="why-number">
+          02
+        </span>
+
+        <div>
+
+          <h3>
+            Exceptional Materials
+          </h3>
+
+          <p>
+            We carefully source materials that bring depth,
+            tactility and longevity to every environment.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Why 3 -->
+
+      <div class="why-item reveal">
+
+        <span class="why-number">
+          03
+        </span>
+
+        <div>
+
+          <h3>
+            Sustainable Thinking
+          </h3>
+
+          <p>
+            We prioritize durable choices and responsible
+            materials wherever they support the project's
+            vision.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Why 4 -->
+
+      <div class="why-item reveal">
+
+        <span class="why-number">
+          04
+        </span>
+
+        <div>
+
+          <h3>
+            End-to-End Management
+          </h3>
+
+          <p>
+            One creative partner from initial concept
+            through final installation and styling.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       11 — NEWSLETTER / CONTACT
+  ====================================================== -->
+
+  <section
+    class="newsletter section section-stone"
+    id="contact"
+  >
+
+```
+<div class="container">
+
+  <div class="newsletter-content reveal">
+
+    <p class="eyebrow">
+      09 — Stay Connected
+    </p>
+
+    <h2 class="section-title newsletter-title">
+      Let's create
+      <br>
+      something <em>lasting.</em>
+    </h2>
+
+    <p class="newsletter-description">
+      Have a project in mind? Tell us a little about it
+      and we'll get back to you.
+    </p>
+
+
+    <form
+      class="newsletter-form"
+      id="newsletterForm"
+    >
+
+      <input
+        type="email"
+        id="emailInput"
+        placeholder="Your email address"
+        required
+      >
+
+      <button type="submit" class="button button-dark">
+
+        <span id="submitText">
+          Get in touch
+        </span>
+
+        <i data-lucide="arrow-up-right"></i>
+
+      </button>
+
+    </form>
+
+
+    <p class="privacy-note">
+      By subscribing, you agree to receive occasional
+      studio updates. No spam.
+    </p>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =====================================================
+       12 — FOOTER
+  ====================================================== -->
+
+  <footer class="footer">
+
+```
+<div class="container">
+
+  <div class="footer-grid">
+
+
+    <!-- Brand -->
+
+    <div class="footer-brand">
+
+      <a href="#" class="logo">
+        ATELIER<span>.</span>
+      </a>
+
+      <p>
+        Interior architecture and spatial design studio
+        creating thoughtful spaces with lasting presence.
+      </p>
+
+      <div class="social-links">
+
+        <a
+          href="#"
+          aria-label="Instagram"
+        >
+          <i data-lucide="instagram"></i>
+        </a>
+
+        <a
+          href="#"
+          aria-label="LinkedIn"
+        >
+          <i data-lucide="linkedin"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Explore -->
+
+    <div class="footer-column">
+
+      <h4>
+        Explore
+      </h4>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#process">
+        Process
+      </a>
+
+    </div>
+
+
+    <!-- Contact -->
+
+    <div class="footer-column">
+
+      <h4>
+        Contact
+      </h4>
+
+      <a href="mailto:hello@atelier.studio">
+        hello@atelier.studio
+      </a>
+
+      <a href="tel:+18085550198">
+        +1 808 555 0198
+      </a>
+
+      <a href="#">
+        New York · Los Angeles
+      </a>
+
+      <a href="#contact">
+        Start a project
+      </a>
+
+    </div>
+
+
+    <!-- Studio -->
+
+    <div class="footer-column">
+
+      <h4>
+        Studio
+      </h4>
+
+      <p>
+        Monday — Friday
+      </p>
+
+      <p>
+        09:00 — 18:00
+      </p>
+
+      <p>
+        By appointment
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer Bottom -->
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 Atelier Studio. All rights reserved.
+    </p>
+
+    <div class="footer-bottom-links">
+
+      <a href="#">
+        Privacy
+      </a>
+
+      <a href="#">
+        Terms
+      </a>
+
+    </div>
+
+    <a
+      href="#"
+      class="back-to-top"
+    >
+      Back to top
+      <i data-lucide="arrow-up"></i>
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </footer>
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script src="script.js"></script>
+
+  <!-- Activate Lucide icons -->
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
 </html>
